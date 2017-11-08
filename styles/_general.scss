@@ -2,7 +2,7 @@
 /// GENERAL STYLINGS ///
 body {
     color: $body-color;
-    display: relative;
+    min-height: 100vh;
 }
 html {
     overflow-y: auto;
@@ -29,7 +29,3 @@ h3 {
     height: 100%;
 }
 
-.main {
-    display: flex;
-    flex-flow: column nowrap;
-}

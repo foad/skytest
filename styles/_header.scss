@@ -1,10 +1,10 @@
 
 .titlebar {
-    height: 72px;
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
     justify-content: center;
+    padding-top: 12px;
 
     h1 {
         display: inline-block;
