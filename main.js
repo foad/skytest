@@ -6,7 +6,7 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Router,  hashHistory } from 'react-router';
+import { HashRouter, Route } from 'react-router-dom';
 
 import { Provider } from 'react-redux';
 
@@ -20,7 +20,6 @@ import store from './store.js';
 |--------------------------------------------------------------------------
 */
 
-import 'bootstrap-css-only/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.css';
 import './styles/main.scss';
 
@@ -33,7 +32,9 @@ import './styles/main.scss';
 
 ReactDOM.render(
     <Provider store={store}>
-      <Router routes={routes} history={hashHistory} />
+        <HashRouter>
+            { routes }
+        </HashRouter>
     </Provider>,
     document.getElementById('wrap')
-  );
+);

@@ -1,43 +1,58 @@
 {
-  "name": "skymoodslider",
-  "version": "1.0.0",
-  "description": "Sky Moodslider for Sky Software Unattended test",
-  "main": "main.js",
-  "directories": {
-    "lib": "lib"
-  },
-  "scripts": {
-    "webpack": "webpack"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/DanFoad/skytest.git"
-  },
-  "keywords": [
-    "sky",
-    "test",
-    "mood"
-  ],
-  "author": "Dan Foad",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/DanFoad/skytest/issues"
-  },
-  "homepage": "https://github.com/DanFoad/skytest#readme",
-  "dependencies": {
-    "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.2",
-    "babel-preset-es2015": "^6.24.1",
-    "babel-preset-minify": "^0.2.0",
-    "babel-preset-react": "^6.24.1",
-    "extract-text-webpack-plugin": "^3.0.2",
-    "minimist": "^1.2.0",
-    "path": "^0.12.7",
-    "react": "^16.0.0",
-    "react-dom": "^16.0.0",
-    "react-redux": "^5.0.6",
-    "react-router-dom": "^4.2.2",
-    "redux": "^3.7.2",
-    "webpack": "^3.8.1"
-  }
+    "name": "skymoodslider",
+    "version": "1.0.0",
+    "description": "Sky Moodslider for Sky Software Unattended test",
+    "main": "main.js",
+    "directories": {
+        "lib": "lib"
+    },
+    "scripts": {
+        "start": "webpack && webpack-dev-server",
+        "webpack": "webpack"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/DanFoad/skytest.git"
+    },
+    "keywords": [
+        "sky",
+        "test",
+        "mood"
+    ],
+    "author": "Dan Foad",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/DanFoad/skytest/issues"
+    },
+    "homepage": "https://github.com/DanFoad/skytest#readme",
+    "dependencies": {
+        "babel-core": "^6.26.0",
+        "babel-loader": "^7.1.2",
+        "babel-plugin-transform-object-rest-spread": "^6.26.0",
+        "babel-preset-env": "^1.6.1",
+        "babel-preset-minify": "^0.2.0",
+        "babel-preset-react": "^6.24.1",
+        "babel-preset-stage-2": "^6.24.1",
+        "css-loader": "^0.28.7",
+        "express": "^4.16.2",
+        "extract-text-webpack-plugin": "^3.0.2",
+        "file-loader": "^1.1.5",
+        "font-awesome": "^4.7.0",
+        "keymirror": "^0.1.1",
+        "minimist": "^1.2.0",
+        "node-sass": "^4.6.0",
+        "path": "^0.12.7",
+        "prop-types": "^15.6.0",
+        "react": "^16.0.0",
+        "react-dom": "^16.0.0",
+        "react-redux": "^5.0.6",
+        "react-router-dom": "^4.2.2",
+        "redux": "^3.7.2",
+        "sass-loader": "^6.0.6",
+        "url-loader": "^0.6.2",
+        "webpack": "^3.8.1"
+    },
+    "devDependencies": {
+        "webpack-dev-server": "^2.9.4"
+    }
 }
