@@ -8,6 +8,8 @@ import AppActions from '../actions/AppActions';
 
 import app from '../lib/app';
 
+import Header from './Header.react'
+
 /*
 |--------------------------------------------------------------------------
 | App
@@ -36,10 +38,12 @@ class Moodslider extends Component {
         const store = this.props.store;
 
         return(
-            <div>
-                <h1>sky</h1>
-                { this.renderChildren() }
-            </div>
+            <main className='main'>
+                <Header />
+                <div className='content'>
+                    { this.renderChildren() }
+                </div>
+            </main>
         );
     }
 }
