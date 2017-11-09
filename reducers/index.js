@@ -1,7 +1,9 @@
 import app from './app';
+import moodslider from './moodslider';
 
 const reducers = [
   app,
+  moodslider,
 ];
 
 export default (state, action) => {

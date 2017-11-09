@@ -6,7 +6,7 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { HashRouter, Route } from 'react-router-dom';
+import { BrowserRouter, Route } from 'react-router-dom';
 
 import { Provider } from 'react-redux';
 
@@ -32,9 +32,9 @@ import './styles/main.scss';
 
 ReactDOM.render(
     <Provider store={store}>
-        <HashRouter>
+        <BrowserRouter>
             { routes }
-        </HashRouter>
+        </BrowserRouter>
     </Provider>,
     document.getElementById('wrap')
 );

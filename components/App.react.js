@@ -17,7 +17,7 @@ import Nav from './Nav.react';
 |--------------------------------------------------------------------------
 */
 
-class Moodslider extends Component {
+class App extends Component {
 
     constructor(props) {
         super(props);
@@ -26,8 +26,9 @@ class Moodslider extends Component {
     }
 
     renderChildren() {
+        const store = this.props.store;
         if (this.props.children === undefined) return;
-        React.cloneElement(
+        return React.cloneElement(
             this.props.children, {
                 app: this,
                 store: store
@@ -48,9 +49,6 @@ class Moodslider extends Component {
                         </aside>
                         <article class='o-guide-layout__main'>
                             <div className="o-layout">
-                                <div class="o-layout__item">
-                                    <h1 class="c-heading-delta">Content</h1>
-                                </div>
                                 { this.renderChildren() }
                             </div>
                         </article>
@@ -61,7 +59,7 @@ class Moodslider extends Component {
     }
 }
 
-Moodslider.propTypes = {
+App.propTypes = {
     store: PropTypes.object,
     children: PropTypes.object,
 }
@@ -70,5 +68,5 @@ function mapStateToProps(state) {
     return { store: { ...state } };
 }
 
-export default connect(mapStateToProps)(Moodslider);
+export default connect(mapStateToProps)(App);
   

@@ -1,12 +1,13 @@
 // Modules
 import React from 'react';
-import { Route } from 'react-router';
+import { Route, Switch } from 'react-router';
 
 // Actions
 import AppActions from '../actions/AppActions';
 
 // Components
 import App from '../components/App.react';
+import Moodslider from '../components/Moodslider.react';
 
 
 const init = {
@@ -14,12 +15,18 @@ const init = {
     app: () => {
         AppActions.init();
     },
+    
+    moodslider: () => {
+        AppActions.moodslider.init();
+    }
 
 };
 
 // Router
 const routes = (
-    <Route component={App} path='/' onEnter={init.app} />
+    <App onEnter={init.app}>
+        <Route exact path='/' component={Moodslider} onEnter={init.moodslider} />
+    </App>
 );
 
 
