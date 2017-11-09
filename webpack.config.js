@@ -24,7 +24,7 @@ module.exports = {
     output: {
         path: `${__dirname}/dist`,
         filename: 'bundle.js',
-        publicPath: '',
+        publicPath: '/',
     },
     module: {
         rules: [
@@ -86,6 +86,9 @@ module.exports = {
                 include: /node_modules/,
             },
         ],
+    },
+    devServer: {
+        historyApiFallback: true,
     },
     plugins: pluginsList,
 };

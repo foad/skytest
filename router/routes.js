@@ -8,6 +8,7 @@ import AppActions from '../actions/AppActions';
 // Components
 import App from '../components/App.react';
 import Moodslider from '../components/Moodslider.react';
+import Upload from '../components/Upload.react';
 
 
 const init = {
@@ -22,6 +23,10 @@ const init = {
 
     videos: () => {
         AppActions.videos.init();
+    },
+
+    upload: () => {
+        
     }
 
 };
@@ -29,7 +34,10 @@ const init = {
 // Router
 const routes = (
     <App onEnter={init.app}>
-        <Route exact path='/' component={Moodslider} onEnter={init.moodslider} />
+        <Switch>
+            <Route exact path='/' component={Moodslider} onEnter={init.moodslider} />
+            <Route path='/upload' component={Upload} onEnter={init.upload} />
+        </Switch>
     </App>
 );
 

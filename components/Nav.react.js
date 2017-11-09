@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router';
 
 import AppActions from '../actions/AppActions';
 
@@ -19,13 +20,13 @@ export default class Nav extends Component {
             <div className='navbar c-aside'>
                 <ul className='o-list-block c-nav c-nav--side'>
                     <li className='u-margin-bottom-tiny'>
-                        <a href='#' class='c-nav__link'>Moodslider</a>
+                        <Link pathname='/' class='c-nav__link'>Moodslider</Link>
                     </li>
                     <li className='u-margin-bottom-tiny'>
-                        <a href='#' class='c-nav__link'>Upload Content</a>
+                        <Link pathname='/upload' class='c-nav__link'>Upload Content</Link>
                     </li>
                     <li className='u-margin-bottom-tiny'>
-                        <a href='#' class='c-nav__link'>About</a>
+                        <Link pathname='#' class='c-nav__link'>About</Link>
                     </li>
                 </ul>
             </div>

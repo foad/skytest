@@ -36,7 +36,7 @@ export default class Slider extends Component {
         return (
             <div className='slider'>
                 <h3>{values.left}</h3>
-                <input type='range' min='-1' max='1' value={this.state.value} step='0.1' onChange={this.valueChange} onMouseUp={this.valueSubmit} />
+                <input type='range' min='-1' max='1' value={this.state.value} step='0.01' onChange={this.valueChange} onMouseUp={this.valueSubmit} />
                 <h3>{values.right}</h3>
             </div>
         );
