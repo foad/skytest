@@ -10,6 +10,7 @@ import app from '../lib/app';
 
 import Header from './Header.react';
 import Nav from './Nav.react';
+import Videos from '../components/Videos.react';
 
 /*
 |--------------------------------------------------------------------------
@@ -42,7 +43,7 @@ class App extends Component {
         return(
             <main className='main app-toolkit'>
                 <Header />
-                <div className='c-page o-container o-container--wide'>
+                <div className='o-container o-container--wide'>
                     <div className='o-guide-layout'>
                         <aside className='o-guide-layout__side'>
                             <Nav />
@@ -53,6 +54,9 @@ class App extends Component {
                             </div>
                         </article>
                     </div>
+                </div>
+                <div className='o-container o-container--wide'>
+                    <Videos />
                 </div>
             </main>
         );

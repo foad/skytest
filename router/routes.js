@@ -18,6 +18,10 @@ const init = {
     
     moodslider: () => {
         AppActions.moodslider.init();
+    },
+
+    videos: () => {
+        AppActions.videos.init();
     }
 
 };

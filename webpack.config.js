@@ -64,9 +64,10 @@ module.exports = {
                 use: [{
                     loader: 'file-loader',
                     options: {
-                        name: 'img/[name].[ext]',
+                        name: '[name].[ext]',
                     },
                 }],
+                include: path.resolve(__dirname, 'images'),
                 exclude: /node_modules/,
             },
             {
