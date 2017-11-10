@@ -7,7 +7,7 @@
         "lib": "lib"
     },
     "scripts": {
-        "start": "webpack && webpack-dev-server",
+        "start": "webpack && node server.js",
         "webpack": "webpack"
     },
     "repository": {
@@ -38,6 +38,8 @@
         "extract-text-webpack-plugin": "^3.0.2",
         "file-loader": "^1.1.5",
         "font-awesome": "^4.7.0",
+        "formidable": "^1.1.1",
+        "history": "^4.7.2",
         "keymirror": "^0.1.1",
         "minimist": "^1.2.0",
         "node-sass": "^4.6.0",
@@ -47,6 +49,7 @@
         "react-dom": "^16.0.0",
         "react-redux": "^5.0.6",
         "react-router-dom": "^4.2.2",
+        "react-router-link": "^2.0.2",
         "redux": "^3.7.2",
         "sass-loader": "^6.0.6",
         "sass-mq": "^3.3.2",

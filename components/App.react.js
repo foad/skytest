@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
 import PropTypes from 'prop-types';
+import { withRouter } from 'react-router-dom';
 
 import { connect } from 'react-redux';
 
@@ -28,9 +29,13 @@ class App extends Component {
 
     renderChildren() {
         const store = this.props.store;
+
+        var index = 0;
+        if (this.props.location.pathname === '/upload') index = 1;
+
         if (this.props.children === undefined) return;
         return React.cloneElement(
-            this.props.children, {
+            this.props.children[index], {
                 app: this,
                 store: store
             }
@@ -48,7 +53,7 @@ class App extends Component {
                         <aside className='o-guide-layout__side'>
                             <Nav />
                         </aside>
-                        <article class='o-guide-layout__main'>
+                        <article className='o-guide-layout__main'>
                             <div className="o-layout">
                                 { this.renderChildren() }
                             </div>
@@ -65,12 +70,12 @@ class App extends Component {
 
 App.propTypes = {
     store: PropTypes.object,
-    children: PropTypes.object,
+    children: PropTypes.array,
 }
 
 function mapStateToProps(state) {
     return { store: { ...state } };
 }
 
-export default connect(mapStateToProps)(App);
+export default withRouter(connect(mapStateToProps)(App));
   

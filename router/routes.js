@@ -1,6 +1,6 @@
 // Modules
 import React from 'react';
-import { Route, Switch } from 'react-router';
+import { Route, Switch, IndexRoute } from 'react-router-dom';
 
 // Actions
 import AppActions from '../actions/AppActions';
@@ -34,10 +34,8 @@ const init = {
 // Router
 const routes = (
     <App onEnter={init.app}>
-        <Switch>
-            <Route exact path='/' component={Moodslider} onEnter={init.moodslider} />
-            <Route path='/upload' component={Upload} onEnter={init.upload} />
-        </Switch>
+        <Route exact path='/' component={Moodslider} onEnter={init.moodslider} />
+        <Route path='/upload' component={Upload} onEnter={init.upload} />
     </App>
 );
 
