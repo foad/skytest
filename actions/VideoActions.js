@@ -21,8 +21,9 @@ const getQuery = () => {
     return query;
 }
 
-const setRecommendations = (videos) => {
-    var items = videos.programme;
+const setRecommendations = (videos = store.getState().videos) => {
+    if (videos.programme === undefined) return;
+    var items = [...videos.programme];
     var query = getQuery();
 
     var fields = [
@@ -39,17 +40,23 @@ const setRecommendations = (videos) => {
         { title: "No content", episodes: 0, genre: "No content", img: "images/blank.png" },
         { title: "No content", episodes: 0, genre: "No content", img: "images/blank.png" },
     ]
-    nn.findMostSimilar(query, items, fields, (nearest, probability) => {
-        recommendations[0].title = nearest.title;
-        recommendations[0].episodes = nearest.episodes;
-        recommendations[0].genre = nearest.genre;
-        recommendations[0].img = nearest.image;
+    for (var i = 0; i < 5; i++) {
+        nn.findMostSimilar(query, items, fields, (nearest, probability) => {
+            recommendations[i].title = nearest.title;
+            recommendations[i].episodes = nearest.episodes;
+            recommendations[i].genre = nearest.genre;
+            recommendations[i].img = nearest.image;
 
-        store.dispatch({
-            type: AppConstants.APP_SET_RECOMMENDATIONS,
-            recommendations: recommendations,
-        })
-    });
+            items = items.filter((video) => {
+                return (nearest.title !== video.title);
+            });
+
+            store.dispatch({
+                type: AppConstants.APP_SET_RECOMMENDATIONS,
+                recommendations: recommendations,
+            });
+        });
+    }
 }
 
 export default {

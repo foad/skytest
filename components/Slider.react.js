@@ -27,6 +27,7 @@ export default class Slider extends Component {
 
     valueChange(event) {
         this.setState({value : event.target.value});
+        AppActions.moodslider.setSlider(this.props.index, event.target.value);
     }
 
     render() {

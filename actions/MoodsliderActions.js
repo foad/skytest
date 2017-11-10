@@ -10,11 +10,11 @@ const init = () => {
 }
 
 const setSlider = (index, slidervalue) => {
-store.dispatch({
-    type : AppConstants.APP_SET_SLIDER_VALUE,
-    index,
-    slidervalue,
-});
+    store.dispatch({
+        type : AppConstants.APP_SET_SLIDER_VALUE,
+        index,
+        slidervalue,
+    });
 }
 
 const setSliders = (slidervalues) => {
