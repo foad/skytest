@@ -22,6 +22,7 @@ export default class Upload extends Component {
         let result = AppActions.upload.uploadRequest(file);
         
         result.then((res) => {
+            AppActions.handleXML(res);
             this.props.history.push('/');
         }, (err) => {
             console.log(err);
