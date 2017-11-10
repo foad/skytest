@@ -44,6 +44,7 @@
         "history": "^4.7.2",
         "keymirror": "^0.1.1",
         "minimist": "^1.2.0",
+        "nearest-neighbor": "0.0.3",
         "node-sass": "^4.6.0",
         "path": "^0.12.7",
         "prop-types": "^15.6.0",

@@ -12,6 +12,18 @@ import AppActions from '../actions/AppActions';
 export default class Video extends Component {
     constructor(props) {
         super(props);
+
+        this.getDescription = this.getDescription.bind(this);
+    }
+
+    getDescription() {
+        const values = this.props.values;
+
+        if (values.genre === "No content") {
+            return (<p>{ values.genre }</p>);
+        } else {
+            return (<p>{values.genre} - {values.episodes}eps</p>);
+        }
     }
 
     render() {
@@ -21,7 +33,7 @@ export default class Video extends Component {
         return (
             <div className='video' style={{ backgroundImage: 'url(' + values.img + ')' }}>
                 <h3>{values.title}</h3>
-                <p>{values.genre}</p>
+                { this.getDescription() }
             </div>
         );
     }

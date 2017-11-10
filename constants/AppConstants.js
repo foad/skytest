@@ -6,4 +6,7 @@ export default keymirror({
 
   APP_SET_SLIDER_VALUE : null,
   APP_SET_SLIDER_VALUES : null,
+
+  APP_SET_VIDEOS : null,
+  APP_SET_RECOMMENDATIONS :  null,
 });

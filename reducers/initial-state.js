@@ -10,10 +10,10 @@ export default {
     ],
     videos: {},
     recommendations: [
-        { title: "No content", genre: "No content", img: "images/blank.png" },
-        { title: "No content", genre: "No content", img: "images/blank.png" },
-        { title: "No content", genre: "No content", img: "images/blank.png" },
-        { title: "No content", genre: "No content", img: "images/blank.png" },
-        { title: "No content", genre: "No content", img: "images/blank.png" },
+        { title: "No content", episodes: 0, genre: "No content", img: "images/blank.png" },
+        { title: "No content", episodes: 0, genre: "No content", img: "images/blank.png" },
+        { title: "No content", episodes: 0, genre: "No content", img: "images/blank.png" },
+        { title: "No content", episodes: 0, genre: "No content", img: "images/blank.png" },
+        { title: "No content", episodes: 0, genre: "No content", img: "images/blank.png" },
     ]
 };
