@@ -23,7 +23,7 @@ const pluginsList = [
 
 module.exports = {
     entry: {
-        main: ['./main.js'],
+        main: ['babel-polyfill', './main.js'],
     },
     target: 'node',
     output: {

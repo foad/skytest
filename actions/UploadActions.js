@@ -15,7 +15,14 @@ const uploadRequest = (file) => {
     let data = new FormData();
     data.append('file', file);
 
-    axios.post('/upload', data);
+    return new Promise((resolve, reject) => {
+        axios.post('/upload', data).then((res) => {
+             if (res.status === 200) resolve(res.data.uploaded);
+             else reject(res.data.error);
+         }).catch((err) => {
+            reject(err);
+         });
+    });
 }
 
 export default {

@@ -16,10 +16,16 @@ export default class Upload extends Component {
         this._handleSubmit = this._handleSubmit.bind(this);
     }
 
-    _handleSubmit(event) {
+    async _handleSubmit(event) {
         event.preventDefault();
         const file = this.refs.input.files[0];
-        AppActions.upload.uploadRequest(file);
+        let result = AppActions.upload.uploadRequest(file);
+        
+        result.then((res) => {
+            this.props.history.push('/');
+        }, (err) => {
+            console.log(err);
+        });
     }
 
     render() {
