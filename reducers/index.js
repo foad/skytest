@@ -8,6 +8,7 @@ const reducers = [
   video
 ];
 
+// Collate all reducers to actions
 export default (state, action) => {
   return reducers.reduce((currentState, reducer) => {
     return reducer(currentState, action);

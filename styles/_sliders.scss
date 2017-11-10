@@ -36,22 +36,30 @@
 
         &::-webkit-slider-thumb {
             -webkit-appearance: none;
-            border: 1px solid #a0a0a0;
+            border: 1px solid $border-dark;
             height: 32px;
             width: 32px;
             border-radius: 50%;
-            background: #eaeaea;
+            background-color: $white;
+            background: $white;
+            background: -moz-radial-gradient(center, ellipse cover, $white 0%, #f1f1f1 53%, #e1e1e1 55%, #f6f6f6 71%);
+            background: -webkit-radial-gradient(center, ellipse cover, $white 0%,#f1f1f1 53%,#e1e1e1 55%,#f6f6f6 71%);
+            background: radial-gradient(ellipse at center, $white 0%,#f1f1f1 53%,#e1e1e1 55%,#f6f6f6 71%);
             cursor: pointer;
             margin-top: -8px;
         }
 
         &::-moz-range-thumb {
             -webkit-appearance: none;
-            border: 1px solid #a0a0a0;
+            border: 1px solid $border-dark;
             height: 32px;
             width: 32px;
             border-radius: 50%;
-            background: #eaeaea;
+            background-color: $white;
+            background: $white;
+            background: -moz-radial-gradient(center, ellipse cover, $white 0%, #f1f1f1 53%, #e1e1e1 55%, #f6f6f6 71%);
+            background: -webkit-radial-gradient(center, ellipse cover, $white 0%,#f1f1f1 53%,#e1e1e1 55%,#f6f6f6 71%);
+            background: radial-gradient(ellipse at center, $white 0%,#f1f1f1 53%,#e1e1e1 55%,#f6f6f6 71%);
             cursor: pointer;
         }
 
@@ -60,8 +68,8 @@
             height: 16px;
             border-radius: 8px;
             cursor: pointer;
-            background: #0072c9;
-            border-bottom: 2px solid darken(#0072c9, 10%);
+            background: $main-color;
+            border-bottom: 2px solid darken($main-color, 10%);
           }
           
           &::-moz-range-track {
@@ -69,8 +77,8 @@
             height: 16px;
             border-radius: 8px;
             cursor: pointer;
-            background: #0072c9;
-            border-bottom: 2px solid darken(#0072c9, 10%);
+            background: $main-color;
+            border-bottom: 2px solid darken($main-color, 10%);
           }
 
         &:focus {

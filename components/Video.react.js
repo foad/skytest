@@ -15,17 +15,22 @@ export default class Video extends Component {
     constructor(props) {
         super(props);
 
+        // Attach subscriber to listen for slider value changes
         let currentSliders = [0, 0, 0, 0];
         store.subscribe(() => {
+
+            // Create copies of slider values
             let previousSliders = [...currentSliders];
             currentSliders = this.getSliderValues();
 
+            // Check if slider values have changed
             var changed = false;
             for (var i = 0; i < currentSliders.length; i++) {
                 if (currentSliders[i] !== previousSliders[i]) changed = true;
             }
 
             if (changed) {
+                // Redo recommendations with new slider values
                 AppActions.videos.setRecommendations();
             }
         });
@@ -34,6 +39,7 @@ export default class Video extends Component {
     }
 
     getSliderValues() {
+        // Turn slider objects in store into simple array
         var sliders = store.getState().sliders;
         var values = [];
         for (var i = 0; i < sliders.length; i++) {

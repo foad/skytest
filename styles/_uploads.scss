@@ -13,8 +13,8 @@
     .fileInput::-webkit-file-upload-button {
         -webkit-appearance: none;
         border: 0;
-        background-color: #0072c9;
-        color: #FFFFFF;
+        background-color: $main-color;
+        color: $white;
         text-transform: uppercase;
         font-weight: bold;
         font-size: 0.8em;

@@ -26,7 +26,7 @@ export default class Nav extends Component {
                         <Link to='/upload' className='c-nav__link'>Upload Content</Link>
                     </li>
                     <li className='u-margin-bottom-tiny'>
-                        <Link to='#' className='c-nav__link'>About</Link>
+                        <Link to='/about' className='c-nav__link'>About</Link>
                     </li>
                 </ul>
             </div>

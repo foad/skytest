@@ -6,7 +6,6 @@ import { connect } from 'react-redux';
 
 import AppActions from '../actions/AppActions';
 
-import app from '../lib/app';
 import globalStore from '../store';
 
 import Slider from './Slider.react';

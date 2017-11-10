@@ -12,51 +12,111 @@
         </moods>
     </programme>
     <programme id="1">
-        <title>Test 2</title>
-        <genre>Documentary</genre>
-        <episodes>6</episodes>
-        <image>/images/planetearth2.png</image>
+        <title>Band of Brothers</title>
+        <genre>Drama, History</genre>
+        <episodes>10</episodes>
+        <image>/images/bandofbrothers.jpg</image>
         <moods>
-            <calm>-1.0</calm>
-            <sad>-0.5</sad>
-            <awake>-0.8</awake>
-            <fearless>-0.1</fearless>
+            <calm>-0.8</calm>
+            <sad>0.65</sad>
+            <awake>0.4</awake>
+            <fearless>0.4</fearless>
         </moods>
     </programme>
     <programme id="2">
-        <title>Test 3</title>
-        <genre>Documentary</genre>
-        <episodes>6</episodes>
-        <image>/images/planetearth2.png</image>
+        <title>Game of Thrones</title>
+        <genre>Drama, Fantasy</genre>
+        <episodes>73</episodes>
+        <image>/images/gameofthrones.jpg</image>
         <moods>
-            <calm>1.0</calm>
-            <sad>-0.5</sad>
-            <awake>-0.8</awake>
-            <fearless>-0.1</fearless>
+            <calm>-0.6</calm>
+            <sad>0.7</sad>
+            <awake>0.6</awake>
+            <fearless>0.5</fearless>
         </moods>
     </programme>
     <programme id="3">
-        <title>Test 4</title>
-        <genre>Documentary</genre>
-        <episodes>6</episodes>
-        <image>/images/planetearth2.png</image>
+        <title>Breaking Bad</title>
+        <genre>Crime, Drama</genre>
+        <episodes>62</episodes>
+        <image>/images/breakingbad.png</image>
         <moods>
-            <calm>1.0</calm>
-            <sad>-0.5</sad>
-            <awake>-0.8</awake>
-            <fearless>-0.1</fearless>
+            <calm>-0.34</calm>
+            <sad>0.2</sad>
+            <awake>0.4</awake>
+            <fearless>-0.4</fearless>
         </moods>
     </programme>
     <programme id="4">
-        <title>Test 5</title>
-        <genre>Documentary</genre>
-        <episodes>6</episodes>
-        <image>/images/planetearth2.png</image>
+        <title>The Wire</title>
+        <genre>Crime, Thriller</genre>
+        <episodes>60</episodes>
+        <image>/images/thewire.jpg</image>
         <moods>
-            <calm>1.0</calm>
-            <sad>-0.5</sad>
-            <awake>-0.8</awake>
-            <fearless>-0.1</fearless>
+            <calm>-0.2</calm>
+            <sad>0.1</sad>
+            <awake>-0.1</awake>
+            <fearless>0.6</fearless>
+        </moods>
+    </programme>
+    <programme id="5">
+        <title>Rick and Morty</title>
+        <genre>Comedy, Adventure</genre>
+        <episodes>32</episodes>
+        <image>/images/rickandmorty.jpg</image>
+        <moods>
+            <calm>-0.6</calm>
+            <sad>0.2</sad>
+            <awake>0.7</awake>
+            <fearless>-0.8</fearless>
+        </moods>
+    </programme>
+    <programme id="6">
+        <title>Sherlock</title>
+        <genre>Crime, Mystery</genre>
+        <episodes>15</episodes>
+        <image>/images/sherlock.jpg</image>
+        <moods>
+            <calm>0.4</calm>
+            <sad>-0.4</sad>
+            <awake>0.7</awake>
+            <fearless>-0.4</fearless>
+        </moods>
+    </programme>
+    <programme id="7">
+        <title>The Simpsons</title>
+        <genre>Comedy</genre>
+        <episodes>634</episodes>
+        <image>/images/thesimpsons.jpg</image>
+        <moods>
+            <calm>0.7</calm>
+            <sad>-0.9</sad>
+            <awake>-0.7</awake>
+            <fearless>0.0</fearless>
+        </moods>
+    </programme>
+    <programme id="8">
+        <title>Top Gear</title>
+        <genre>Comedy</genre>
+        <episodes>250</episodes>
+        <image>/images/topgear.jpg</image>
+        <moods>
+            <calm>0.6</calm>
+            <sad>-0.8</sad>
+            <awake>0.4</awake>
+            <fearless>-0.3</fearless>
+        </moods>
+    </programme>
+    <programme id="9">
+        <title>Mr. Robot</title>
+        <genre>Crime, Thriller</genre>
+        <episodes>32</episodes>
+        <image>/images/mrrobot.jpg</image>
+        <moods>
+            <calm>-0.6</calm>
+            <sad>0.4</sad>
+            <awake>0.8</awake>
+            <fearless>0.3</fearless>
         </moods>
     </programme>
 </programmes>

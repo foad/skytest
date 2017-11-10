@@ -6,7 +6,6 @@ import { connect } from 'react-redux';
 
 import AppActions from '../actions/AppActions';
 
-import app from '../lib/app';
 import globalStore from '../store';
 
 import Video from './Video.react';
@@ -27,7 +26,7 @@ export default class Videos extends Component {
         const store = globalStore.getState();
         
         return (
-            <div className='o-layout__item'>
+            <div className='o-layout__item videos-container'>
                 <div className='videos'>
                     <Video values={store.recommendations[0]} index='0' />
                     <Video values={store.recommendations[1]} index='1' />

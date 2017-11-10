@@ -16,6 +16,7 @@ export default class Upload extends Component {
         this._handleSubmit = this._handleSubmit.bind(this);
     }
 
+    // Send file data asynchronously through upload middleware
     async _handleSubmit(event) {
         event.preventDefault();
         const file = this.refs.input.files[0];

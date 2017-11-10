@@ -7,8 +7,6 @@ import { connect } from 'react-redux';
 
 import AppActions from '../actions/AppActions';
 
-import app from '../lib/app';
-
 import Header from './Header.react';
 import Nav from './Nav.react';
 import Videos from '../components/Videos.react';
@@ -27,11 +25,13 @@ class App extends Component {
         this.renderChildren = this.renderChildren.bind(this);
     }
 
+    // Render relevant children to the route
     renderChildren() {
         const store = this.props.store;
 
         var index = 0;
         if (this.props.location.pathname === '/upload') index = 1;
+        if (this.props.location.pathname === '/about') index = 2;
 
         if (this.props.children === undefined) return;
         return React.cloneElement(
